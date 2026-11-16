@@ -1,0 +1,9 @@
+class solution():
+
+    def factorial(self ,n : int) -> int:
+        if n == 1 or n == 0:
+            return 1
+        return n * self.factorial(n - 1)
+    
+obj = solution()
+print(obj.factorial(12))
